@@ -1,0 +1,23 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav
+    class="sidenav"
+    mode="side"
+    opened
+    fixedInViewport="true"
+    fixedTopGap="64"
+  >
+    <mat-nav-list class="nav-list">
+      <a mat-list-item appWhite>
+        <i class="material-icons" appWhite> home </i>
+        Início
+      </a>
+      <a mat-list-item appWhite>
+        <i class="material-icons" appWhite> storefront </i>
+        Produtos
+      </a>
+    </mat-nav-list>
+    <button mat-raised-button (click)="createProduct()" color="primary">
+      Salvar
+    </button>
+  </mat-sidenav>
+</mat-sidenav-container>
