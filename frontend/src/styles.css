@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Importar estilos de elevação do Material */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
 html,
 body {
   height: 100%;
@@ -17,12 +20,9 @@ body {
 }
 
 .red {
-  color: #B61012;
+  color: #b61012;
 }
 
 .v-middle {
   vertical-align: middle;
 }
-
-/* Importar estilos de elevação do Material */
-@import "@angular/material/prebuilt-themes/indigo-pink.css";

@@ -2,8 +2,8 @@ import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { RouterLink, RouterOutlet } from "@angular/router";
 import { WhiteDirective } from "../../../directives/whiteDirective";
-import { HomeComponent } from "../../../views/home/home.component";
 
 @Component({
   selector: "app-nav",
@@ -12,10 +12,10 @@ import { HomeComponent } from "../../../views/home/home.component";
     MatListModule,
     WhiteDirective,
     CommonModule,
-    HomeComponent,
+    RouterLink,
+    RouterOutlet,
   ],
   templateUrl: "./nav.component.html",
   styleUrl: "./nav.component.css",
 })
-export class NavComponent {
-}
+export class NavComponent {}
