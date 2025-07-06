@@ -19,10 +19,10 @@ body {
     0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
 }
 
-.red {
-  color: #b61012;
-}
-
 .v-middle {
   vertical-align: middle;
+}
+
+.sidenav .mdc-list-item__primary-text {
+  color: #fff !important;
 }
