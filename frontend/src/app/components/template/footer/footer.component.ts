@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { MatToolbarModule } from "@angular/material/toolbar";
-import { RedDirective } from "../../../directives/redDirective";
+import { RedDirective } from "../../../directives/red.directive";
 
 @Component({
   selector: "app-footer",
