@@ -29,6 +29,11 @@
       "id": "462",
       "name": "Produto Teste",
       "price": 125.98
+    },
+    {
+      "id": "3c2a",
+      "name": "Produto Form",
+      "price": "250.00"
     }
   ]
 }
