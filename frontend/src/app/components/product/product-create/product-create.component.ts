@@ -1,3 +1,4 @@
+import { Product } from "./product.model";
 import { Component } from "@angular/core";
 import { ProductService } from "../product.service";
 import { Router } from "@angular/router";
@@ -15,8 +16,16 @@ export class ProductCreateComponent {
     private readonly router: Router
   ) {}
 
+  product: Product = {
+    name: "",
+    price: 0,
+  };
+
   createProduct(): void {
-    this.productService.showMessage("Operação executada com sucesso!");
+    this.productService.createProduct(this.product).subscribe(() => {
+      this.productService.showMessage("Produto criado com sucesso!");
+      this.router.navigateByUrl("/products");
+    });
   }
 
   cancel(): void {
