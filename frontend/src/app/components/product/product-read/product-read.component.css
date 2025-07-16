@@ -1,6 +1,5 @@
-.card-container {
+.products-container {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
   padding: 1rem;
-  width: 100%;
 }
