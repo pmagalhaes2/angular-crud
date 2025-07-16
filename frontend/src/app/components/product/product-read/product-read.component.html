@@ -1,1 +1,6 @@
-<p>product-read works!</p>
+<mat-card class="card-container">
+  <mat-card-title>Produtos</mat-card-title>
+  <mat-nav-list>
+    <a mat-list-item *ngFor="let product of products">{{ product.name }}</a>
+  </mat-nav-list>
+</mat-card>
