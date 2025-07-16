@@ -1,10 +1,11 @@
+import { ProductReadComponent } from './../../components/product/product-read/product-read.component';
 import { Component } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { Router } from "@angular/router";
 
 @Component({
   selector: "app-product-crud",
-  imports: [MatButtonModule],
+  imports: [MatButtonModule, ProductReadComponent],
   templateUrl: "./product-crud.component.html",
   styleUrl: "./product-crud.component.css",
 })

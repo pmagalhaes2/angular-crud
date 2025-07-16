@@ -1,8 +1,8 @@
+import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
-import { Product } from "./product-create/product.model";
-import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
+import { Product } from "./product-create/product.model";
 
 @Injectable({
   providedIn: "root",
@@ -25,5 +25,9 @@ export class ProductService {
 
   createProduct(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, product);
+  }
+
+  readProducts(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.baseUrl);
   }
 }
