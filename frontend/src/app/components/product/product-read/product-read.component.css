@@ -3,3 +3,8 @@
   flex-direction: column;
   padding: 1rem;
 }
+
+i.edit {
+  color: #3f51b5;
+  margin-right: 10px;
+}

@@ -6,12 +6,14 @@ import { Product } from "../product-create/product.model";
 import { ProductService } from "./../product.service";
 
 import localePt from "@angular/common/locales/pt";
+import { RouterLink } from "@angular/router";
+import { RedDirective } from "../../../directives/red.directive";
 
 registerLocaleData(localePt);
 
 @Component({
   selector: "app-product-read",
-  imports: [MatListModule, CommonModule, MatTableModule],
+  imports: [MatListModule, CommonModule, MatTableModule, RouterLink, RedDirective],
   templateUrl: "./product-read.component.html",
   styleUrl: "./product-read.component.css",
   providers: [
@@ -23,7 +25,7 @@ registerLocaleData(localePt);
 })
 export class ProductReadComponent {
   products: Product[] = [];
-  displayedColumns = ["id", "name", "price"];
+  displayedColumns = ["id", "name", "price", "action"];
 
   constructor(private readonly productService: ProductService) {}
 
