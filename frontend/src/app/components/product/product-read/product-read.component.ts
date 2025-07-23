@@ -13,7 +13,13 @@ registerLocaleData(localePt);
 
 @Component({
   selector: "app-product-read",
-  imports: [MatListModule, CommonModule, MatTableModule, RouterLink, RedDirective],
+  imports: [
+    MatListModule,
+    CommonModule,
+    MatTableModule,
+    RouterLink,
+    RedDirective,
+  ],
   templateUrl: "./product-read.component.html",
   styleUrl: "./product-read.component.css",
   providers: [
@@ -33,5 +39,6 @@ export class ProductReadComponent {
     this.productService.readProducts().subscribe((products) => {
       this.products = products;
     });
+
   }
 }
