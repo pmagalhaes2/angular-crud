@@ -2,7 +2,7 @@ import { CommonModule, registerLocaleData } from "@angular/common";
 import { Component, LOCALE_ID } from "@angular/core";
 import { MatListModule } from "@angular/material/list";
 import { MatTableModule } from "@angular/material/table";
-import { Product } from "../product-create/product.model";
+import { Product } from "../product.model";
 import { ProductService } from "./../product.service";
 
 import localePt from "@angular/common/locales/pt";

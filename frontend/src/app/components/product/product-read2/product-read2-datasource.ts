@@ -3,22 +3,22 @@ import { MatPaginator } from "@angular/material/paginator";
 import { MatSort } from "@angular/material/sort";
 import { merge, Observable, of as observableOf } from "rxjs";
 import { map } from "rxjs/operators";
-import { Product } from "../product-create/product.model";
+import { Product } from "../product.model";
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: Product[] = [
-  { id: 1, name: "Hydrogen", price: 1.00 },
-  { id: 2, name: "Helium", price: 2.50 },
-  { id: 3, name: "Lithium", price: 0 },
-  { id: 4, name: "Beryllium", price: 0 },
-  { id: 5, name: "Boron", price: 0 },
-  { id: 6, name: "Carbon", price: 0 },
-  { id: 7, name: "Nitrogen", price: 0 },
-  { id: 8, name: "Oxygen", price: 0 },
-  { id: 9, name: "Fluorine", price: 0 },
-  { id: 10, name: "Neon", price: 0 },
-  { id: 11, name: "Sodium", price: 0 },
-  { id: 12, name: "Magnesium", price: 0 },
+  { id: '1', name: "Hydrogen", price: 1.0 },
+  { id: '2', name: "Helium", price: 2.5 },
+  { id: '3', name: "Lithium", price: 0 },
+  { id: '4', name: "Beryllium", price: 0 },
+  { id: '5', name: "Boron", price: 0 },
+  { id: '6', name: "Carbon", price: 0 },
+  { id: '7', name: "Nitrogen", price: 0 },
+  { id: '8', name: "Oxygen", price: 0 },
+  { id: '9', name: "Fluorine", price: 0 },
+  { id: '10', name: "Neon", price: 0 },
+  { id: '11', name: "Sodium", price: 0 },
+  { id: '12', name: "Magnesium", price: 0 },
 ];
 
 /**

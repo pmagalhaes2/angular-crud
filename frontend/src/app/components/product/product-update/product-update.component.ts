@@ -5,8 +5,8 @@ import { MatCardModule } from "@angular/material/card";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { ActivatedRoute, Router } from "@angular/router";
+import { Product } from "../product.model";
 import { ProductService } from "../product.service";
-import { Product } from "./../product-create/product.model";
 
 @Component({
   selector: "app-product-update",

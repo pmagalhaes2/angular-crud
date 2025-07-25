@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ViewChild } from "@angular/core";
 import { MatPaginator, MatPaginatorModule } from "@angular/material/paginator";
 import { MatSort, MatSortModule } from "@angular/material/sort";
 import { MatTable, MatTableModule } from "@angular/material/table";
-import { Product } from "./../product-create/product.model";
+import { Product } from "../product.model";
 import { ProductRead2DataSource } from "./product-read2-datasource";
 
 @Component({
