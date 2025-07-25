@@ -1,15 +1,15 @@
-import { Product } from './../product-create/product.model';
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
-import { MatTableModule, MatTable } from '@angular/material/table';
-import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
-import { MatSortModule, MatSort } from '@angular/material/sort';
-import { ProductRead2DataSource } from './product-read2-datasource';
+import { AfterViewInit, Component, ViewChild } from "@angular/core";
+import { MatPaginator, MatPaginatorModule } from "@angular/material/paginator";
+import { MatSort, MatSortModule } from "@angular/material/sort";
+import { MatTable, MatTableModule } from "@angular/material/table";
+import { Product } from "./../product-create/product.model";
+import { ProductRead2DataSource } from "./product-read2-datasource";
 
 @Component({
-  selector: 'app-product-read2',
-  templateUrl: './product-read2.component.html',
-  styleUrl: './product-read2.component.css',
-  imports: [MatTableModule, MatPaginatorModule, MatSortModule]
+  selector: "app-product-read2",
+  templateUrl: "./product-read2.component.html",
+  styleUrl: "./product-read2.component.css",
+  imports: [MatTableModule, MatPaginatorModule, MatSortModule],
 })
 export class ProductRead2Component implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -18,7 +18,7 @@ export class ProductRead2Component implements AfterViewInit {
   dataSource = new ProductRead2DataSource();
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'price'];
+  displayedColumns = ["id", "name", "price"];
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;

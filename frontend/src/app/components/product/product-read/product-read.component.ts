@@ -6,8 +6,9 @@ import { Product } from "../product-create/product.model";
 import { ProductService } from "./../product.service";
 
 import localePt from "@angular/common/locales/pt";
-import { RouterLink } from "@angular/router";
+import { RouterLink, RouterOutlet } from "@angular/router";
 import { RedDirective } from "../../../directives/red.directive";
+import { ProductUpdateComponent } from "../product-update/product-update.component";
 
 registerLocaleData(localePt);
 
@@ -19,6 +20,8 @@ registerLocaleData(localePt);
     MatTableModule,
     RouterLink,
     RedDirective,
+    ProductUpdateComponent,
+    RouterOutlet,
   ],
   templateUrl: "./product-read.component.html",
   styleUrl: "./product-read.component.css",
@@ -39,6 +42,5 @@ export class ProductReadComponent {
     this.productService.readProducts().subscribe((products) => {
       this.products = products;
     });
-
   }
 }
