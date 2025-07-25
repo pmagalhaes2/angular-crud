@@ -24,3 +24,14 @@ body {
 .sidenav .mdc-list-item__primary-text {
   color: #fff !important;
 }
+
+.mat-mdc-snack-bar-container {
+  &.msg-success {
+    --mdc-snackbar-container-color: #28a745 !important;
+    --mdc-snackbar-supporting-text-color: #fff !important;
+  }
+  &.msg-error {
+    --mdc-snackbar-container-color: #b61012 !important;
+    --mdc-snackbar-supporting-text-color: #fff !important;
+  }
+}
